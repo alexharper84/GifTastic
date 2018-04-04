@@ -13,6 +13,14 @@ I used the GIPHY API to make a dynamic web page that populates with gifs of your
 
 Once the page loads, be mesmerized by the Star Bridge. Once that's out of the way, press a button and enjoy the GIF avalanche.
 
+## A line of code I'm proud of
+
+I appended a css property to an object in the DOM using .css()
+```
+var p = $("<p>").text("Rating: " + rating).css("color", "white");
+```
+
+
 ## Highlights
 
 * Each request adds 10 more gifs to the page. Your previous GIFs are maintained.
