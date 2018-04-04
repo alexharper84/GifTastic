@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Reset css -->
   <link rel="stylesheet" href="assets/css/reset.css">
   <!-- Bootstrap Styles -->
@@ -11,10 +11,61 @@
 
   <!-- Trivia Custom Styles -->
   <link rel="stylesheet" href="assets/css/style.css">
+
   <title>GifTastic</title>
 </head>
 <body>
-    <div class="jumbotron d-flex justify-content-center">Giphy API DOM App</div>
+  <div class="jumbotron text-center">Giphy API DOM App</div>
+  <video id="video-background" preload muted autoplay loop>
+    <source src="https://media.giphy.com/media/xUPGcfzaX9hFFQJYre/giphy.mp4" type="video/mp4">
+    </video>
 
-</body>
-</html>
+    <!-- button triggered ajax_______________________________________________________________ -->
+    <div class="container-fluid align-self-center col-12 blueBg blkBrdr text-center m-10">
+      <button data-person="Pepsi">Pepsi</button>
+      <button data-person="Coke">Coke</button>
+      <button data-person="Ayrton Senna">Ayrton Senna</button>
+      <button data-person="Lewis Hamilton">Lewis Hamilton</button>
+      <button data-person="Michael Schumacher">Michael Schumacher</button>
+      <button data-person="Hersheys">Hersheys</button>
+      <button data-person="marijuana">Cannabis</button>
+      <button data-person="Games of Thrones">Games of Thrones</button>
+      <button data-person="Michael Jordan">Michael Jordan</button>
+      <button data-person="Floyd Mayweather">Floyd Mayweather</button>
+      <button data-person="Tom Brady">Tom Brady</button>
+      <button data-person="Ostrich">Ostrich</button>
+      <button data-person="koi fish">koi fish</button>
+      <button data-person="german shepherd">German Shepherds</button>
+      <button data-person="Alton Brown">Alton Brown</button>
+      <button data-person="Kim Kardashian">Kim Kardashian</button>
+      <button data-person="Riverdale">Riverdale</button>
+      <button data-person="80s">80s</button>
+      <button data-person="Husky">Husky</button>
+      <button data-person="Santa Monica">Santa Monica</button>
+      <button data-person="Arnold Schwarzenegger">I'll be back</button>
+      <button data-person="Al Bundy">Al Bundy</button>
+      <span id="to-dos"></span>
+    </div>
+
+    <div class="col-10 floatLeft">
+      <div class="container-fluid clearfix d-flex flex-wrap" id="gifs-appear-here">
+      </div>
+    </div>
+
+    <!-- insert button _______________________________________________________________-->
+    <div class="col-2 floatRight">
+
+      <form>
+        <span id="todo-item"><span class="white">Add a button</span><input id="to-do" type="text" ><input id="add-to-do" value="Add Item" type="submit"></span>
+      </form>
+
+    </div>
+
+    <!-- end button insert _______________________________________________________________-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/js/gifToDom.js"></script>
+
+
+  </body>
+  </html>
