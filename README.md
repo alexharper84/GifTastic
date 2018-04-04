@@ -23,7 +23,7 @@ var p = $("<p>").text("Rating: " + rating).css("color", "white");
 
 ## Highlights
 
-* Each request adds 10 more gifs to the page. Your previous GIFs are maintained.
+* Each request adds 10 more GIFs to the page. Your previous GIFs are maintained.
 * App is mostly mobile responsive.
 
 ## License
